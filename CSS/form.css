@@ -1,0 +1,96 @@
+form {
+    max-width: 600px;
+    margin: 20px auto 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"],
+  form input[type="reset"] {
+    background-color: #2f4858;
+    color: #edf7fb;
+    cursor: pointer;
+    border: none;
+  }
+  
+  form input[type="submit"]:hover,
+  form input[type="reset"]:hover {
+    background-color: #53819e;
+  }
+  
+  form input:focus,
+  form textarea:focus,
+  form select:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+  }
+  
+  form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  form legend {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  form input[type="radio"],
+  form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+  }
+  
+  form label[for="newsletter"] {
+    display: flex;
+    align-items: center;
+  }
+  
+  form input[type="range"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  form input[type="color"] {
+    padding: 5px;
+    border: none;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  form input[type="file"] {
+    padding: 5px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  

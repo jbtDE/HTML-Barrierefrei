@@ -1,0 +1,41 @@
+figure {
+    /* Dimensions */
+    margin: 20px auto;
+    max-width: 90%;
+    
+    /* Form */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    
+    /* Shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    /* Text alignment */
+    text-align: center;
+  }
+  
+  figure img {
+    /* Dimensions */
+    max-width: 100%;
+    height: auto;
+    
+    /* Form */
+    border-radius: 5px;
+  }
+  
+  figcaption {
+    /* Color */
+    color: #2F4858;
+    
+    /* Font */
+    font-size: 0.9rem;
+    font-style: italic;
+    
+    /* Dimensions */
+    margin-top: 10px;
+  }
+
+  
+  

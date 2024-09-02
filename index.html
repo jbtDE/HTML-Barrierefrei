@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Barrierefrei</title>
+    <link rel="stylesheet" href="./CSS/gloable.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/table.css" />
+    <link rel="stylesheet" href="./CSS/tooltip.css" />
+    <link rel="stylesheet" href="./CSS/figure.css" />
+    <link rel="stylesheet" href="./CSS/button.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML Barrierefrei</h1>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              aria-label="Wechsel zur Startseite"
+              class="active"
+              >Startseite</a
+            >
+          </li>
+          <li>
+            <a
+              href="exampleOne.html"
+              aria-label="Wechsel zur Beispielseite Video"
+              >Video</a
+            >
+          </li>
+          <li>
+            <a
+              href="exampleTwo.html"
+              aria-label="Wechsel zur Beispielseite Formular"
+              >Formular</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Einleitung</h2>
+        <div class="einleitung">
+          <p>
+            Auf dieser Beispiel <span lang="en">Website</span> geht es darum die
+            Inhalte möglicht barrierefrei bzw. barrierearm zu präsentieren.
+            Dafür wird aber zunächst nur die möglichkeiten von
+            <abbr lang="en" title="Hypertext Markup Language" tabindex="0"
+              >HTML</abbr
+            >
+            und
+            <abbr lang="en" title="Cascading Style Sheets" tabindex="0"
+              >CSS</abbr
+            >
+            zurückgegriffen. Bereits in diesem ersten Text wurden zwei der Pukte
+            der barriereheit bedacht.
+          </p>
+          <ul>
+            <li>
+              <p>Fremdworte</p>
+            </li>
+            <li>
+              <p>Abkürzungen</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="einleitung">
+            <h3>Tabellen</h3>
+            <p>
+              In dem nächsten Abschnitt geht es um die verschiedenen Arten von
+              Tabellen und wie man diese So Formatiert, dass diese auch richtig
+              von <span lang="en">Screenreadern</span> erfasst.
+            </p>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <h4>Tabelle mit Spaltenüberschriften</h4>
+              <table>
+                <caption>
+                  Eine Tabelle mit Spaltenüberschriften
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Beispiel 1</th>
+                    <th scope="col">Beispiel 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Inhalt 1A</td>
+                    <td>Inhalt 1B</td>
+                  </tr>
+                  <tr>
+                    <td>Inhalt 2A</td>
+                    <td>Inhalt 2B</td>
+                  </tr>
+                  <tr>
+                    <td>Inhalt 3A</td>
+                    <td>Inhalt 3B</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="column">
+              <h4>Tabelle mit Zeilenüberschriften</h4>
+              <table>
+                <caption>
+                  Eine Tabelle mit Zeilenüberschriften
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">Beispiel 3</th>
+                    <td>Inhalt 3A</td>
+                    <td>Inhalt 3B</td>
+                    <td>Inhalt 3C</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Beispiel 4</th>
+                    <td>Inhalt 4A</td>
+                    <td>Inhalt 4B</td>
+                    <td>Inhalt 4C</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Beispiel 5</th>
+                    <td>Inhalt 5A</td>
+                    <td>Inhalt 5B</td>
+                    <td>Inhalt 5C</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Beispiel 6</th>
+                    <td>Inhalt 6A</td>
+                    <td>Inhalt 6B</td>
+                    <td>Inhalt 6C</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="einleitung">
+            <h3>Farben und Bilder</h3>
+            <p>
+              In diesem Abschnitt geht es um Bilder. Mit diesen wird dann
+              gleichermaßen auf das Farbdesign eingegangen bzw. auf die
+              Kontrastwerte zwischen den Farben.
+            </p>
+            <p>
+              Es werden ausßerdem <span lang="en">Buttons</span> ohne Text
+              und <span lang="en">Links</span> eingebunden.
+            </p>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <h4>Beispielbilder</h4>
+              <figure>
+                <img
+                  src="./assets/FarbbewertungText.png"
+                  alt="In diesem Bild kann man die Bewertung der verwendeten Farben zueinander betrachten."
+                />
+                <figcaption>Bewertung die verwendeten Farben</figcaption>
+              </figure>
+            </div>
+            <div class="column">
+              <h4>Erklärung</h4>
+              <p>
+                In dem Bild auf der linken Seite wird ein
+                <span lang="en">Screenshot</span> gezeigt, welche den Vergleich
+                der Primär- mit der Sekundärfarbe aufzeigt. Man kann dort
+                erkennen das der Kontrast einen Wert von
+                <span aria-label="8 Punkt 82">8.82</span> hat und somit eine
+                <abbr
+                  lang="en"
+                  title="Web Content Accessibility Guidelines"
+                  tabindex="0"
+                  >WCAG</abbr
+                >-Wertung von
+                <abbr lang="en" title="Tripple A" tabindex="0">AAA</abbr>
+                erhält. Ebenfalls kann man erkennen auch die durch Farbblindheit
+                oder andere Sehstörungen hervorgerufenen Veränderungen auf die
+                Farben ebenfalls ein <span lang="en">Rating</span> von
+                <abbr lang="en" title="Tripple A" tabindex="0">AAA</abbr>
+                erhalten. Den besten Kontrast erhält man bei den Farben Schwarz
+                und Weiß, diese sollte man aber auch nicht zu oft verwenden, da
+                sie die Augen stark belasten können.Dieser Vergleich wurde auf
+                der Seite
+                <a
+                  href="https://www.whocanuse.com/?bg=edf7fb&fg=2f4858&fs=16&fw="
+                  class="explanation-link"
+                  target="_blank"
+                  aria-label="Öffnet die Seite in einem neuen Fenster"
+                  ><span lang="en">whocanuse.com</span></a
+                >
+                durchgeführt.
+              </p>
+              <div class="button-container">
+                <button
+                  type="button"
+                  aria-label="Link zur Seite des Beispielformulars"
+                  onclick="location.href='exampleTwo.html';"
+                >
+                  Zum Beispielformular
+                </button>
+                <button
+                  type="button"
+                  class="icon-button"
+                  aria-label="Link zur Seite des Beispielvideos"
+                  onclick="location.href='exampleOne.html'"
+                >
+                  <img src="./assets/video.svg" alt="Video Icon" />
+                  <span class="tooltip">Zur Seite des Beispielvideos</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>HTML-Barrierefrei by Jonas Tietz</p>
+    </footer>
+  </body>
+</html>

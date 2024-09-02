@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beispiel 2</title>
+    <link rel="stylesheet" href="./CSS/gloable.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/table.css" />
+    <link rel="stylesheet" href="./CSS/tooltip.css" />
+    <link rel="stylesheet" href="./CSS/form.css" /
+  </head>
+  <body>
+    <header>
+      <h1>HTML Barrierefrei</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Wechsel zur Startseite"
+              >Startseite</a
+            >
+          </li>
+          <li>
+            <a
+              href="exampleOne.html"
+              aria-label="Wechsel zur Beispielseite Video"
+              >Video</a
+            >
+          </li>
+          <li>
+            <a
+              href="exampleTwo.html"
+              aria-label="Wechsel zur Beispielseite Formular"
+              class="active"
+              >Formular</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Test-Formular</h2>
+        <form action="#" method="post">
+          <p id="form-description">
+            Füllen Sie das folgende Formular aus, alle Felder sind erforderlich.
+          </p>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+            aria-label="Ihr Name"
+          />
+          <span class="error" id="name-error"
+            >Bitte geben Sie Ihren Namen ein.</span
+          >
+
+          <label for="password">Passwort:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            aria-required="true"
+            aria-label="Ihr Passwort"
+          />
+          <span class="error" id="password-error"
+            >Bitte geben Sie ein Passwort ein.</span
+          >
+
+          <label for="email">E-Mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+            aria-label="Ihre E-Mail-Adresse"
+          />
+          <span class="error" id="email-error"
+            >Bitte geben Sie eine gültige E-Mail-Adresse ein.</span
+          >
+
+          <label for="dob">Geburtsdatum:</label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+            aria-required="true"
+            aria-label="Geben Sie ihr Geburtsdatum an"
+          />
+          <span class="error" id="dob-error"
+            >Bitte geben Sie Ihr Geburtsdatum ein.</span
+          >
+
+          <fieldset>
+            <legend>Geschlecht:</legend>
+            <label for="male">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                aria-label="Männlich"
+                required
+                aria-required="true"
+                tabindex="0"
+              />
+              Männlich
+            </label>
+            <label for="female">
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                aria-label="Weiblich"
+                tabindex="0"
+              />
+              Weiblich
+            </label>
+            <label for="other">
+              <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="other"
+                aria-label="Divers"
+                tabindex="0"
+              />
+              Divers
+            </label>
+            <span class="error" id="gender-error"
+              >Bitte wählen Sie Ihr Geschlecht aus.</span
+            >
+          </fieldset>
+
+          <label for="datatest">Testdatei:</label>
+          <input
+            type="file"
+            id="datatest"
+            name="datatest"
+            aria-label="Lade eine Testdatei hoch"
+          />
+
+          <label for="subject">Betreff:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            aria-required="true"
+            aria-label="Betreff der Nachricht"
+          />
+          <span class="error" id="subject-error"
+            >Bitte geben Sie den Betreff ein.</span
+          >
+
+          <label for="luckynumber">Glückszahl:</label>
+          <input
+            type="luckynumber"
+            id="luckynumber"
+            name="luckynumber"
+            required
+            aria-required="true"
+            aria-label="Geben Sie ihre Glückszahl ein"
+          />
+          <span class="error" id="luckynumber-error"
+            >Bitte geben Sie Ihre Glückszahl ein.</span
+          >
+
+          <label for="message">Nachricht:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            aria-required="true"
+            aria-label="Ihre Nachricht"
+          ></textarea>
+          <span class="error" id="message-error"
+            >Bitte geben Sie Ihre Nachricht ein.</span
+          >
+
+          <label for="range">Bewertung (1-10):</label>
+          <input
+            type="range"
+            id="range"
+            name="range"
+            min="1"
+            max="10"
+            aria-label="Bewertung"
+          />
+          <span class="error" id="range-error"
+            >Bitte bewerten Sie zwischen 1 und 10.</span
+          >
+
+          <label for="contact-method">Bevorzugte Kontaktmethode:</label>
+          <select
+            id="contact-method"
+            name="contact-method"
+            required
+            aria-required="true"
+            aria-label="Bevorzugte Kontaktmethode"
+          >
+            <option value="" disabled selected>
+              -- Bitte wählen Sie eine Kontaktmethode --
+            </option>
+            <option value="email">E-Mail</option>
+            <option value="phone">Telefon</option>
+          </select>
+          <span class="error" id="contact-method-error"
+            >Bitte wählen Sie eine Kontaktmethode aus.</span
+          >
+
+          <label for="newsletter">
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              aria-label="Newsletter abonnieren"
+            />
+            Newsletter abonnieren
+          </label>
+
+          <input
+            type="submit"
+            value="Absenden"
+            aria-label="Formular absenden"
+          />
+          <input
+            type="reset"
+            value="Zurücksetzen"
+            aria-label="Formular zurücksetzen"
+          />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>HTML-Barrierefrei by Jonas Tietz</p>
+    </footer>
+  </body>
+</html>

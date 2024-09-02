@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beispielvideo</title>
+    <link rel="stylesheet" href="./CSS/gloable.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/table.css" />
+    <link rel="stylesheet" href="./CSS/tooltip.css" />
+    <link rel="stylesheet" href="./CSS/form.css" />
+    <link rel="stylesheet" href="./CSS/video.css" />
+    <link rel="stylesheet" href="./CSS/button.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML Barrierefrei</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Wechsel zur Startseite"
+              >Startseite</a
+            >
+          </li>
+          <li>
+            <a
+              href="exampleOne.html"
+              aria-label="Wechsel zur Beispielseite Video"
+              class="active"
+              >Video</a
+            >
+          </li>
+          <li>
+            <a
+              href="exampleTwo.html"
+              aria-label="Wechsel zur Beispielseite Formular"
+              >Formular</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="video-section">
+        <h2>Beispielvideo</h2>
+        <div class="video-container">
+          <video controls>
+            <track
+              default
+              kind="subtitles"
+              srclang="en"
+              src="./assets/friday.vtt"
+              label="English"
+            />
+            <source src="./assets/friday2.mp4" type="video/mp4" />
+            Dein Browser spielt das Video-Format nicht ab.
+          </video>
+          <p>
+            Da es sich um eine lokale Seite handelt, werden die Untertitel nicht
+            direkt im Video geladen. Das kann mit einem lokalem
+            <span lang="en">Server</span> gelöst werden. Mehr dazu im
+            <span lang="en">README</span> auf
+            <span lang="en">GitHub</span>.
+          </p>
+        </div>
+        <div class="button-container">
+          <button
+            type="button"
+            aria-label="Link zur Seite des Beispielformulars"
+            onclick="location.href='textfassung.html';"
+          >
+            Zur Textfassung des Videos
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>HTML-Barrierefrei by Jonas Tietz</p>
+    </footer>
+  </body>
+</html>

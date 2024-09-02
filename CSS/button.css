@@ -1,0 +1,80 @@
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Abstand zwischen den Buttons */
+}
+
+.button-container button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #edf7fb;
+  background-color: #2f4858;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.button-container button:hover {
+  background-color: #496c81;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button-container button:active {
+  background-color: #1e2e3a;
+  transform: translateY(0);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.button-container button .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: auto;
+  background-color: #2F4858;
+  color: #EDF7FB;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position über dem Button */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.button-container button:focus .tooltip,
+.button-container button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button-container .icon-button {
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #2f4858;
+}
+
+.button-container .icon-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #edf7fb;
+}
